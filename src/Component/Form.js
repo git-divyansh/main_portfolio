@@ -9,8 +9,7 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const onclickClear = (e) =>{
-    e.preventDefault();
+  const onclickClear = () =>{
     setName("");
     setEmail("");
     setMessage("");
@@ -28,6 +27,7 @@ const Form = () => {
       }, (error) => {
           console.log(error.text);
       });
+      onclickClear(e)
   };
   
 
@@ -35,19 +35,20 @@ const Form = () => {
     <div className='from'>
         <form className = ".contact-form" onSubmit={(e)=>sendEmail(e)}>
             <label>Your Name</label>
-            <input type="text" name="user_name" id="name" onChange={(e)=>setName(e.target.id)} />
+            <input type="text" value={name} name="user_name" id="name" onChange={(e)=>setName(e.target.value)} />
             <label>Email</label>
-            <input type="email" name="user_email" id="email" onChange={(e)=>setEmail(e.target.id)}/>
+            <input type="email" value={email} name="user_email" id="email" onChange={(e)=>setEmail(e.target.value)}/>
             <label>Subject</label>
-            <input type="text"  name="user_subject" id="subject" onChange={(e)=>setsubject(e.target.id)} />
+            <input type="text" value={subject} name="user_subject" id="subject" onChange={(e)=>setsubject(e.target.value)} />
             <label>Message</label>
             <textarea rows={6} 
               name="message" 
               id="message"
+              value={message}
               placeholder='Type your message here' 
-              onChange={(e)=>setMessage(e.target.id)}
+              onChange={(e)=>setMessage(e.target.value)}
             />
-            <button className='btn' onClick={(e)=>onclickClear(e)}>Submit</button>
+            <button className='btn'>Submit</button>
         </form>
     </div>
   )
