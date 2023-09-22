@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 // import emailjs from 'emailjs-com';
 import emailjs from "@emailjs/browser";
 import "./Form.css";
@@ -9,19 +9,13 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const onclickClear = () =>{
+  const onclickClear = (e) =>{
+    e.preventDefault();
     setName("");
     setEmail("");
     setMessage("");
     setsubject("");
   }
-
-  const templateParams={
-    user_name: {name},
-    user_subject: {subject},
-    user_email: {email},
-    message:{message}
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -34,8 +28,6 @@ const Form = () => {
       }, (error) => {
           console.log(error.text);
       });
-    
-    onclickClear();
   };
   
 
@@ -55,7 +47,7 @@ const Form = () => {
               placeholder='Type your message here' 
               onChange={(e)=>setMessage(e.target.id)}
             />
-            <button className='btn'>Submit</button>
+            <button className='btn' onClick={(e)=>onclickClear(e)}>Submit</button>
         </form>
     </div>
   )

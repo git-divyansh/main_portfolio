@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import data from "./EduData";
 import certData from './CertData';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -8,18 +8,10 @@ import {PiCertificateBold} from "react-icons/pi";
 import "rc-collapse/assets/index.css";
 import 'react-vertical-timeline-component/style.min.css';
 import "./AboutContentSecond.css"
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemButton,
-    AccordionItemPanel,
-} from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 
 const AboutContentSecond = () => {
-    const Panel = Collapse.Panel;
-  const [check, setCheck] = useState(false);    
+    const Panel = Collapse.Panel;    
   return (
     <div className='timeline'>
             <div className='timeline-cert'>

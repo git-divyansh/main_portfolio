@@ -9,7 +9,7 @@ const PersonFirst = () => {
       <div className='mask'>
         <img className='intro-img'
           src= {person1}
-          alt='Intro Image'
+          alt='Intro'
         />
       </div>
       <div className='content'>
