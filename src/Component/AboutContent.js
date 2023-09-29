@@ -1,7 +1,7 @@
 import React from 'react'
 import "./AboutContent.css";
 import { Link } from 'react-router-dom';
-import image2 from "../Assests/image6.jpg";
+import image2 from "../Assests/image5.jpg";
 import image5 from "../Assests/image2.jpg";
 
 const AboutContent = () => {

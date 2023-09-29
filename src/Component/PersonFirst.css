@@ -1,6 +1,7 @@
 .person-first{
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .person-first .content{
@@ -36,10 +37,20 @@
 .intro-img{
     height: 100%;
     width: 100%;
+    margin: 0;
+    right: 0;
+    box-sizing: border-box;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     object-fit: cover;
+}
+
+.intro-img::after{
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
 }
 
 .mask::after{
@@ -49,8 +60,11 @@
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    box-sizing: border-box;
     background-color: black;
     opacity: 0.60;
+    z-index: auto;
 }
 
 @media screen and (max-width : 640px) {

@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 7rem auto;
+    margin: 6% 0;
     height: 100vh;
 }
 
 .quote h2{
 
-    font-size: 4rem;
-    max-width: 50rem;
+    font-size: 3.5rem;
+    max-width: 50%;
     text-align: center;
     color: white;
 
@@ -73,6 +73,12 @@
     }
 
     .about{
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .about{
+        font-size: 0.7rem;
     }
 }

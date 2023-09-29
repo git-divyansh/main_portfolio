@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
             <div className='right'>
                 <h4>About</h4>
-                <p>I work closely with designers, project managers, and other developers to ensure that the application meets the requirements and specifications.</p>
+                <p>I work closely with designers, project managers, and other developers to ensure that the application has meet all requirements and specifications.</p>
                 <div className='social'>
                     <a href="https://www.linkedin.com/in/divyansh-gusain-62294921b/"><FaLinkedin 
                         size = {20}
