@@ -62,6 +62,10 @@
 @media screen and (max-width : 740px) {
     .timeline{
         font-size: 12px;
+        flex-direction: column;
+    }
+    .timeline-cert{
+        width: 100%;
     }
 }
 
