@@ -67,6 +67,9 @@
     .timeline-cert{
         width: 100%;
     }
+    .timeline-edu{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width : 1054px) {
