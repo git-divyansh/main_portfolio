@@ -10,7 +10,7 @@ const ProjectCardData = [
         imgsrc : image4,
         title : "MINDSCRIRBE",
         description : "This is a full-stack MERN application that allows users to create, read, update and delete notes. The application has a user authentication system that allows users to sign up and log in. Once logged in, users can create notes with a title and body. They can also edit and delete their notes. The application has a search feature that allows users to search for notes by title or body.",
-        view : "View.com",
+        view : "https://mindscribe12.netlify.app/",
         source : "https://github.com/git-divyansh/MindScribe"
     },
     {
