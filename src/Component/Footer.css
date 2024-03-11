@@ -20,11 +20,16 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    
 }
 
-.location{
+.location {
     display: flex;
-    margin-bottom: 0.8rem;
+}
+
+.phone .email{
+    display: flex;
+    align-items: center;
 }
 
 .location p{
@@ -40,8 +45,23 @@
     padding: 1rem; 
 }
 
+.right p{
+    text-align: center;
+}
+
+.right h4{
+    text-align: center;
+}
+
 .social{
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon{
+    color: "#fff"; 
+    margin-right: 2rem;
 }
 
 h4{
@@ -53,12 +73,12 @@ p{
     font-size: 1.2rem;
 }
 
-@media screen and (max-width : 640px) {
-    .footer-container{
-        flex-direction: column;
+@media screen and (max-width : 1024px) {
+    .left p, h4{
+        font-size: 15px;
     }
     .right p{
-        /* font-size: 1.2rem; */
+        font-size: 17px;
     }
     .right h4{
         /* text-align: center; */
@@ -67,7 +87,20 @@ p{
         width: 90%;
         padding-left: 7%;
         text-align: justify;
-        /* width: fit-content; */
+    }
+}
+
+/* Media query for phones */
+@media screen and (max-width: 480px) {
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left p, h4{
+        font-size: 15px;
+    }
+    .right p{
+        font-size: 17px;
     }
 }
 

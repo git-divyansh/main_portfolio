@@ -11,6 +11,7 @@ const Footer = () => {
                 <div className='location'>
                     <FaHome 
                         size = {20}
+                        className='footer-icon'
                         style = {{color: "#fff", marginRight: "2rem"}}
                     />
                     <div>
@@ -21,13 +22,13 @@ const Footer = () => {
                 <div className='phone'>
                     <h4><FaPhone
                         size = {20}
-                        style = {{color: "#fff", marginRight: "2rem"}}
+                        className='footer-icon'
                     /><a href='tel:+91 8909472419'>+91 8909472419</a></h4>
                 </div>
                 <div className='email'>
                     <h4><FaMailBulk
                         size = {20}
-                        style = {{color: "#fff", marginRight: "2rem"}}
+                        className='footer-icon'
                     /><a href='mailto:divyanshwork2022@gmail.com'>divyanshwork2022@gmail.com</a></h4>
                 </div>
             </div>

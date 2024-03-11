@@ -38,7 +38,7 @@
 .proj-details p{
     padding-bottom: 1rem;
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: left;
     margin-bottom: auto;
 }
 
@@ -49,22 +49,51 @@
 }
 
 .proj-btn .btn{
-    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-@media  screen and (max-width: 740px) {
+/* @media  screen and (max-width: 740px) {
     .project-container{
         max-width : 90%;
         margin : auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+@media  screen and (max-width: 1440px) {
+    .project-container{
+        margin : 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .proj-btn .btn{
+        height: 2.2rem;
+        width: 5rem;
+        font-size: 14px;
     }
 }
 
-@media  screen and (max-width: 1024px) {
+@media  screen and (max-width: 767px) {
     .project-container{
-        max-width : 50%;
-        margin : auto;
-        grid-template-columns: 1fr;
+        max-width : 20rem;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Media query for phones */
+@media screen and (max-width: 480px) {
+    .proj-details p {
+        font-size: 12px;
+    }
+    .proj-title{
+        font-size: 20px;
+    }
+    .proj-btn .btn{
+        height: 2.2rem;
+        width: 5rem;
+        font-size: 12px;
     }
 }
