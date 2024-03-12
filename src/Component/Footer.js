@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoMdMail } from "react-icons/io";
 import "./Footer.css"
 import {FaHome, FaPhone, FaLinkedin, FaMailBulk, FaInstagramSquare} from "react-icons/fa"
 
@@ -46,6 +47,10 @@ const Footer = () => {
                         style = {{color: "#fff", marginRight: "2rem"}}
                         />
                     </a>
+                    <a href="mailto:divyanshwork2022@gmail.com"><IoMdMail 
+                        size = {20}
+                        style = {{color: "#fff", marginRight: "2rem"}}
+                    /></a>
                 </div>
             </div>
         </div>

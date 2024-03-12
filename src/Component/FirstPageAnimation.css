@@ -1,0 +1,177 @@
+/* styles.css */
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 5rem;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: #F8D90F;
+    padding: 3rem 0rem;
+    color : #2d2b2b;
+    
+  }
+
+  .left-content h3{
+    color : #2d2b2b;
+    width: 70%;
+    text-align: center;
+  }
+  
+  .floating-icons {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon {
+    width: 50px; /* Adjust icon size as needed */
+    height: auto;
+    margin: 0 20px;
+    animation: floatAnimation 6s infinite ease-in-out;
+  }
+  
+  @keyframes floatAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+
+  .animated-words span{
+    color : #2d2b2b;
+    font-size : 1.2rem;
+    font-weight: 600;
+  }
+  
+  .word {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    opacity: 0;
+    animation: fadeInAnimation 4s infinite alternate;
+  }
+  
+  @keyframes fadeInAnimation {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .right-content {
+    flex: 2;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .parallax {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    perspective: 1000px;
+    /* z-index: -1; */
+  }
+  
+  .parallax-image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transition: transform 0.5s;
+  }
+  
+  .parallax-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media only screen and (max-width: 1024px) {
+    .container{
+      height: fit-content;
+    }
+    .parallax {
+      height: 400px; /* Adjust height for iPad Pro mode */
+    }
+
+    .left-content h1{
+      font-size: 1.8rem;
+    }
+
+    .left-content, .right-content {
+      width: 100%;
+      gap: 2rem;
+    }
+
+    .animated-words span{
+      font-size: 13px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      height: fit-content;
+      flex-direction: column;
+    }
+    .left-content, .right-content {
+      flex: none;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    .animated-words span{
+      font-size: 15px;
+    }
+
+    .left-content h1{
+      font-size: 1.8rem;
+    }
+    .parallax {
+      position: relative;
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+    
+
+  .underline-animation {
+    cursor: default;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .underline-animation::after {
+    
+    margin-top: 20px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #000; /* Adjust color as needed */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  .underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  

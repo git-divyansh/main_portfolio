@@ -2,10 +2,10 @@ import Doodle from "../Assests/ProjImage/Doodle.png"
 import DrMedicine from "../Assests/ProjImage/DrMedicine.png"
 import Mindscribe from "../Assests/ProjImage/Mindscribe.png"
 import OutlayManager from "../Assests/ProjImage/OutlyaManager.png"
-import image6 from "../Assests/ProjImage/Image6.png"
 import URLock from "../Assests/ProjImage/UrlLock.png"
 import Ecommerce from "../Assests/ProjImage/Ecommerce.png"
 import NewApp from "../Assests/ProjImage/NewApp.png"
+import image6 from "../Assests/ProjImage/Image6.png"
 
 const ProjectCardData = [
     {

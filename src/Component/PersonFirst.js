@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import person1 from "../Assests/image1.jpg"
 import "./PersonFirst.css";
+import FirstPageAnimation from './FirstPageAnimation';
 
 const PersonFirst = () => {
   return (
@@ -24,6 +25,7 @@ const PersonFirst = () => {
           >Contact</Link>
         </div>
       </div>
+      <FirstPageAnimation />
     </div>
   )
 }

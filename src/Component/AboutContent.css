@@ -29,12 +29,12 @@
     text-align: center;
     margin: auto;
     padding: 1rem;
-    max-width: 450px;
+    max-width: 700px;
 }
 
 .about .left p{
     margin: 1.2rem 0;
-    text-align: justify;
+    text-align: left;
 }
 
 .about .right{
@@ -67,18 +67,34 @@
     z-index: 5;
 }
 
-@media screen and (max-width : 740px) {
+.btn{
+    font-weight: 600;
+}
+
+@media screen and (max-width : 1024px) {
     .quote h2{
-        font-size: 2.5rem;
+        font-size: 2.7rem;
+        line-height: 4rem;
     }
 
-    .about{
-        font-size: 1rem;
+
+    .left p{
+        font-size: 20px;
+    }
+
+    .btn{
+        font-size: 20px;
     }
 }
 
-@media screen and (max-width : 400px) {
-    .about{
-        font-size: 0.7rem;
+@media screen and (max-width : 480px) {
+    .quote h2{
+        font-size: 1.8rem;
+        max-width: 80%;
+    }
+
+    .left p{
+        text-align: center;
+        font-size: 20px;
     }
 }
