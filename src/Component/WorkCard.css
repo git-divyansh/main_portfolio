@@ -66,12 +66,29 @@
 @media  screen and (max-width: 1440px) {
     .project-container{
         margin : 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .proj-btn .btn{
+        height: 2.2rem;
+        width: 5rem;
+    }
+
+    .proj-details p{
+        font-size: 14px;
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    .project-container{
+        margin : 20px;
         grid-template-columns: repeat(2, 1fr);
     }
     .proj-btn .btn{
         height: 2.2rem;
         width: 5rem;
-        font-size: 14px;
+    }
+    .proj-details p{
+        font-size: 13px;
     }
 }
 
@@ -80,6 +97,10 @@
         max-width : 20rem;
         margin: auto;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .proj-details p{
+        font-size: 12px;
     }
 }
 

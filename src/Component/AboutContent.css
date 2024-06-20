@@ -7,13 +7,25 @@
     height: 100vh;
 }
 
+@keyframes flash {
+    0%, 100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-10px); 
+    }
+  }
+
 .quote h2{
 
     font-size: 3.5rem;
     max-width: 50%;
     text-align: center;
     color: white;
-
+    display: inline-block;
+    animation: flash 3s infinite;
 }
 .about{
     width: 100%;
@@ -59,13 +71,33 @@
     grid-row: 1;
     padding-top: 20%;
     z-index: 6;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    animation: fadeIn 2s forwards;
+      
 }
-
+      
+      
 .right .bottom{
     grid-column: 4 / -1;
     grid-row: 1;
     z-index: 5;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    animation: fadeIn 2s forwards;
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 
 .btn{
     font-weight: 600;

@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import "./AboutContent.css";
 import { Link } from 'react-router-dom';
 import image2 from "../Assests/image5.jpg";
 import image5 from "../Assests/image2.jpg";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const AboutContent = () => {
+
   return (
     <>
     <div className = "quote">
@@ -24,10 +26,10 @@ const AboutContent = () => {
         <div className='right'>
           <div className='img-container'>
             <div className='img-stack top'>
-              <img src = {image2} className="img" alt = "true"></img>
+              <LazyLoadImage src = {image2} className="img" alt = "true"></LazyLoadImage>
             </div>
             <div className='img-stack bottom'>
-              <img src = {image5} className="img" alt = "true"></img>
+              <LazyLoadImage src = {image5} className="img" alt = "true"></LazyLoadImage>
             </div>
           </div>
         </div>

@@ -26,6 +26,7 @@ ul{
   font-size: 1rem;
   text-decoration: uppercase;
   background: rgb(248, 217, 15);
+  /* background: rgb(227, 231, 171); */
   color: #222;
   border: 1px solid #fff;
   cursor: pointer;
@@ -36,7 +37,7 @@ ul{
   color: #fff;
 }
 
-.btn ::hover{
+.btn:hover{
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   transition: 0.3s;

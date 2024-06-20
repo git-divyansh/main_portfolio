@@ -17,7 +17,7 @@ const Footer = () => {
                     />
                     <div>
                         <p>Dehradun,</p>
-                        <p>Uttarakhan</p>
+                        <p>Uttarakhand</p>
                     </div>
                 </div>
                 <div className='phone'>

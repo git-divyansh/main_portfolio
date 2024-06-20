@@ -10,15 +10,16 @@ import OutlayManager from "../Assests/ProjImage/OutlyaManager.png"
 import Ecommerce from "../Assests/ProjImage/ecommerceLogin.png"
 
 import "./FirstPageAnimation.css"
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const FirstPageAnimation = () => {
   return (
     <div className="container">
       <div className="right-content">
       <div className="parallax">
-        <img src={Doodle} alt="Image1" className="parallax-image" style={{top: '0%'}} />
-        <img src={OutlayManager} alt="Image2" className="parallax-image" style={{top: '30%'}} />
-        <img src={Ecommerce} alt="Image3" className="parallax-image" style={{top: '60%'}} />
+        <LazyLoadImage src={Doodle} alt="Image1" className="parallax-image" style={{top: '0%'}} />
+        <LazyLoadImage src={OutlayManager} alt="Image2" className="parallax-image" style={{top: '30%'}} />
+        <LazyLoadImage src={Ecommerce} alt="Image3" className="parallax-image" style={{top: '60%'}} />
       </div>
     </div>
     <div className="left-content">
@@ -26,13 +27,13 @@ const FirstPageAnimation = () => {
       <h3>Ever since I embarked on my journey as a software developer, coding has been a source of fascination for me. By leveraging the following platforms, I have been able to refine my skills and improve my capabilities as a programmer.</h3>
       <div className="floating-icons">
         <a href="https://github.com/git-divyansh/">
-          <img src={githubImg} alt="Icon1" className="icon" style={{animationDelay: '0s'}} />
+          <LazyLoadImage src={githubImg} alt="Icon1" className="icon" style={{animationDelay: '0s'}} />
         </a>
         <a href="https://leetcode.com/FishBum/">
-        <img src={leetcodeImg} alt="Icon2" className="icon" style={{animationDelay: '2s'}} />
+        <LazyLoadImage src={leetcodeImg} alt="Icon2" className="icon" style={{animationDelay: '2s'}} />
         </a>
         <a href="https://auth.geeksforgeeks.org/user/divyanshdh">
-        <img src={gfgImg} alt="Icon3" className="icon" style={{animationDelay: '4s'}} />
+        <LazyLoadImage src={gfgImg} alt="Icon3" className="icon" style={{animationDelay: '4s'}} />
         </a>
       </div>
       <div className="animated-words">
