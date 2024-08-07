@@ -15,7 +15,7 @@ const PersonFirst = () => {
         />
       </div>
       <div className='content'>
-        <p>HI,  I'M A DIVYANSH.</p>
+        <p>HI,  I'M DIVYANSH.</p>
         <h1>WEB DEVELOPER.</h1>
         <div>
           {/* <Link to="/Project"
